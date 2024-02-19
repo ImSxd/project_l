@@ -118,21 +118,21 @@ if(isset($_GET['logout']) == 'true'){
 if(isset($_POST['login'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-    $result = $db->select("user","*","WHERE username_user = '$username' AND password_user = '$password'");
-    if($result->num_rows > 0){
-        $fetch = $result->fetch_object();
-        if($fetch->type_user == 1){
-            $_SESSION['userid'] = $fetch->id_user;
-            $_SESSION['usertype'] = 'admin';
-            header('location:./admin/index.php');
-        }else{
-            $_SESSION['userid'] = $fetch->id_user;
-            $_SESSION['usertype'] = 'customer';
-            header('location:./customer/index.php');
-        }
-    }else{
-        echo '<script type="text/javascript">sweetAlert("ERROR !","Username OR Password was wrong","error")</script>';
-    }
+    echo $username;
+    // $result = $db->select("user","*","WHERE username_user = '$username' AND password_user = '$password'");
+    // if($result->num_rows > 0){
+    //     $fetch = $result->fetch_object();
+    //     if($fetch->type_user == 1){
+    //         $_SESSION['userid'] = $fetch->id_user;
+    //         $_SESSION['usertype'] = 'admin';
+    //         header('location:./admin/index.php');
+    //     }else{
+    //         $_SESSION['userid'] = $fetch->id_user;
+    //         $_SESSION['usertype'] = 'customer';
+    //         header('location:./customer/index.php');
+    //     }
+    // }else{
+    //     echo '<script type="text/javascript">sweetAlert("ERROR !","Username OR Password was wrong","error")</script>';
+    // }
 }
 ?>
