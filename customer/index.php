@@ -29,13 +29,13 @@ if(isset($_GET['menu'])){
 </head>
 <style>
     #logout{
-        background-color:salmon;
+        background-color:tomato;
         border-radius:10px;
         font-weight:bold;
         color:white;
     }
     #logout:hover{
-        background-color:tomato;
+        background-color:salmon;
         border-radius:10px;
         font-weight:bold;
         color:black;
@@ -43,8 +43,8 @@ if(isset($_GET['menu'])){
 </style>
 <body>
     <div class="container-fluid" >
-        <div class="row flex-nowrap" style = "height:100vh;">
-            <div class="d-none d-md-block bg-light text-dark col-1 col-md-3 col-lg-2 d-flex d-column justify-content-between" >
+        <div class="row flex-nowrap" style = "height:100%;">
+            <div class="d-none d-md-block bg-light text-dark col-1 col-md-3 col-lg-2 d-flex d-column justify-content-between">
                 <?php include_once('./layout/navbar.php') ?>
             </div>
             <div class="col-11 col-md-9 col-lg-10" style = " background-color:#f0f0f0">
