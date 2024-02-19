@@ -110,15 +110,9 @@ $db = new db();
     }
 </script>
 <?php
-if(isset($_GET['logout']) == 'true'){
-    echo '<script type="text/javascript">sweetAlert("Success !","Logout Successfully!","error")</script>';
-}else{
-    return;
-}
 if(isset($_POST['login'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
-
     $result = $db->select("user","*","WHERE username_user = '$username' AND password_user = '$password'");
     if($result->num_rows > 0){
         $fetch = $result->fetch_object();
@@ -135,4 +129,10 @@ if(isset($_POST['login'])){
         echo '<script type="text/javascript">sweetAlert("ERROR !","Username OR Password was wrong","error")</script>';
     }
 }
+if(isset($_GET['logout']) == 'true'){
+    echo '<script type="text/javascript">sweetAlert("Logout !","Logout Successfully!","error")</script>';
+}else{
+    return;
+}
+
 ?>

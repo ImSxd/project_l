@@ -45,7 +45,7 @@ class db{
         $e = explode(".",$file['name']);
         $ex = strtolower(end($e));
         $fileN = rand() . "." . $ex;
-        $fileP = "./../img/" . $fileN;
+        $fileP = "./img/" . $fileN;
         move_uploaded_file($file['tmp_name'],$fileP);
         return $fileN;
     }
@@ -53,7 +53,7 @@ class db{
         $e = explode(".",$file['name']);
         $ex = strtolower(end($e));
         $fileN = rand() . "." . $ex;
-        $fileP = "./../../img/" . $fileN;
+        $fileP = "./../img/" . $fileN;
         move_uploaded_file($file['tmp_name'],$fileP);
         return $fileN;
     }
