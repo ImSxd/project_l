@@ -32,14 +32,10 @@
                     <img src="./../img/412061034_740219064223635_1149011169544202603_n.jpg" class="img-fluid">
                     </div>
                 </div>
-                <div class = "card-footer">
-                    <div class="row justify-content-between">
-                        <div class="col-6">
-                        </div>
-                        <div class="col-6">
-
-                        </div>
-                    </div>
+                <div class = "card-footer text-center fs-2">
+                            
+                            <img src="./../img/icon/like.svg"  style ="width:2rem;" class="img-fluid">
+                            <img src="./../img/icon/dislike.svg" style ="width:2rem;" class="img-fluid">
                 </div>
             </div>
 
