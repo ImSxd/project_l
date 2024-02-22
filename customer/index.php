@@ -40,14 +40,31 @@ if(isset($_GET['menu'])){
         font-weight:bold;
         color:black;
     }
+    #com{
+        background-color:green;
+        color:white;
+        font-weight:bolder;
+    }
+    #com:hover{
+        background-color:yellowgreen;
+        color:black;
+        font-weight:bolder;
+    }
+    #nav{
+        background-image:linear-gradient(to right,#E6F0B8,#E5F0AF);
+        border-radius:6px;
+    }
+    #body{
+        background-image:linear-gradient(to right,#E5F0AF,#F0FFA3,#E5F886);
+    }
 </style>
 <body>
     <div class="container-fluid" >
         <div class="row flex-nowrap" style = "height:100%;">
-            <div class="d-none d-md-block bg-light text-dark col-1 col-md-3 col-lg-2 d-flex d-column justify-content-between">
+            <div class="d-none d-md-block text-dark col-1 col-md-3 col-lg-2 d-flex d-column justify-content-between border border-1 border-dark" id = "nav">
                 <?php include_once('./layout/navbar.php') ?>
             </div>
-            <div class="col-11 col-md-9 col-lg-10" style = " background-color:#f0f0f0">
+            <div class="col-11 col-md-9 col-lg-10" id = "body">
                 <?php include_once('./layout/menu.php') ?>
             </div>
         </div>

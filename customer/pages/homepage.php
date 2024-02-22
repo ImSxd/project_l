@@ -1,13 +1,8 @@
 <div class="container">
     <div class="" style = "height:30px;"></div>
-    <div class="card border bordered mb-4" style = "border-radius:10px;">
+    <div class="card border bordered mb-4" style = "border-radius:10px; width:1090px;">
         <div class="card-body">
             <div class="row justify-content-between">
-                <div class="col-1">
-                    <img src="./../img/<?= $fetuser->img_user ?>" style = "width:80px; height:80px; object-fit:cover;" class = "rounded-circle" alt="">
-                </div>
-                <div class="col-11">
-                    <br>
                     <?php include_once('./component/post.php') ?>
                 </div>
             </div>
@@ -33,9 +28,7 @@
                     </div>
                 </div>
                 <div class = "card-footer text-center fs-2">
-                            
-                            <img src="./../img/icon/like.svg"  style ="width:2rem;" class="img-fluid">
-                            <img src="./../img/icon/dislike.svg" style ="width:2rem;" class="img-fluid">
+                        <?php include_once('./component/comment.php') ?>
                 </div>
             </div>
 

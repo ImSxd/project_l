@@ -1,4 +1,4 @@
-<div class="bg-light text-dark p-2">
+<div class=" text-dark p-2" id = "nav">
     <div class="text-center text-dark mt-4">
         <h4 style  = "font-weight:bold; color:gold;" ><del style = "color:blue; ">Face</del>FootBook</h4>
     </div>
