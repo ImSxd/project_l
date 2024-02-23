@@ -7,7 +7,6 @@
     </div>
     <ul class="nav nav-pills flex-column mt-4 mt-sm-0">
         <li class="nav-item py-2 py-sm-0"><a href="index.php?menu=0" class="nav-link <?= $menu == '0' ? 'active' : '' ?>">หน้าแรก</a></li>
-        <li class="nav-item py-2 py-sm-0"><a href="index.php?menu=1" class="nav-link <?= $menu == '1' ? 'active' : '' ?>">การตั้งค่า</a></li>
         <li class="nav-item py-2 py-sm-0"><a class="btn btn mt-4" id = "logout" onclick = "return logout()">ออกจากระบบ</a></li>
     </ul>
 </div>
